@@ -181,7 +181,7 @@ const DashboardVulcain = () => {
             <div className="mt-4 md:mt-6">
               <div className="flex items-center gap-2 text-[#10B981] mb-3 md:mb-4">
                 <Clock size={14} className="md:w-4 md:h-4"/>
-                <span className="text-[9px] md:text-xs font-black uppercase tracking-wider">Parcours 2012 → 2015</span>
+                <span className="text-[9px] md:text-xs font-black uppercase tracking-wider">Parcours 2012 → 2014</span>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-3 max-h-80 md:max-h-96 overflow-y-auto p-1">
