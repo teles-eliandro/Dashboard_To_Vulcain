@@ -41,7 +41,7 @@ const DashboardVulcain = () => {
 
   // --- TOUS LES 17 PROJETS (COMPLETS) ---
   const chemtechProjects = [
-    { id: "PBR-09410", client: "PETROBRAS", title: "Centrale Thermique UTE SEPE TIARAJU", period: "2012 - 2015", role: "Stagiaire Support d'Ingénierie", tools: "PDMS, AutoCAD, MS Office", details: "Modélisation complète (Civil, Équipements, Tuyauterie, Métallique, Électrique). Extraction, révision et exécution d'isométriques et de documents de flexibilité.", skills: ["Modélisation 3D", "Piping", "Isométriques"] },
+    { id: "PBR-09410", client: "PETROBRAS", title: "Centrale Thermique UTE SEPE TIARAJU", period: "2012 - 2014", role: "Stagiaire Support d'Ingénierie", tools: "PDMS, AutoCAD, MS Office", details: "Modélisation complète (Civil, Équipements, Tuyauterie, Métallique, Électrique). Extraction, révision et exécution d'isométriques et de documents de flexibilité.", skills: ["Modélisation 3D", "Piping", "Isométriques"] },
     { id: "FWR-10397", client: "FEED PREMIUM ONSITE", title: "Support Technique Ingénierie", period: "2012", role: "Stagiaire Support d'Ingénierie", tools: "PDMS, Isométriques", details: "Adéquation, extraction, révision et exécution d'isométriques et de documents de flexibilité.", skills: ["Piping", "Flexibilité"] },
     { id: "PBR-10330", client: "PETROBRAS", title: "EBDMOTOB & EDAdeqLogist", period: "2012 - 2013", role: "Stagiaire Support d'Ingénierie", tools: "AutoCAD, PDMS", details: "Adéquation technique, révision d'isométriques et support aux documents de flexibilité pour la logistique.", skills: ["Logistique technique", "Isométriques"] },
     { id: "VAL-11622", client: "VALE", title: "ABASLOCO", period: "2013", role: "Stagiaire Support d'Ingénierie", tools: "AutoCAD (DWG)", details: "Exécution et correction de plans techniques et de fichiers DWG pour le projet.", skills: ["Dessin Technique", "AutoCAD"] },
@@ -49,12 +49,12 @@ const DashboardVulcain = () => {
     { id: "PTC-12001", client: "PTC", title: "EBD Coger", period: "2012", role: "Stagiaire Support d'Ingénierie", tools: "PDMS, Isométriques", details: "Travaux d'adéquation et exécution de documents de flexibilité et isométriques.", skills: ["Piping", "Support Technique"] },
     { id: "UNE-11651", client: "UNE", title: "UTCS UTGC", period: "2012 - 2013", role: "Stagiaire Support d'Ingénierie", tools: "PDMS, AutoCAD", details: "Révision et exécution d'isométriques et de documents de flexibilité.", skills: ["Tuyauterie", "Flexibilité"] },
     { id: "PBR-11693", client: "PETROBRAS", title: "PDMS COMOS", period: "2013", role: "Stagiaire Support d'Ingénierie", tools: "PDMS, COMOS", details: "Levé de terrain virtuel et intégration de données techniques.", skills: ["Virtual Survey", "Data Integration"] },
-    { id: "VAL-11601", client: "VALE", title: "Analyse Santé & Sécurité (HSE) São Luis", period: "2012 - 2015", role: "Stagiaire Support d'Ingénierie", tools: "Normes NR, MS Office", details: "Élaboration de formulaires d'évaluation des risques. Analyse de conformité selon les normes NR et marquage de copies physiques.", skills: ["HSE", "Audit", "Normes NR"] },
+    { id: "VAL-11601", client: "VALE", title: "Analyse Santé & Sécurité (HSE) São Luis", period: "2012 - 2014", role: "Stagiaire Support d'Ingénierie", tools: "Normes NR, MS Office", details: "Élaboration de formulaires d'évaluation des risques. Analyse de conformité selon les normes NR et marquage de copies physiques.", skills: ["HSE", "Audit", "Normes NR"] },
     { id: "VAL-12549", client: "VALE", title: "Nouveau Poste de Maintenance", period: "2013", role: "Stagiaire Support d'Ingénierie", tools: "AutoCAD, Excel", details: "Recherche et remplissage de listes de matériels (BOM). Élaboration et correction de fichiers DWG.", skills: ["BOM", "AutoCAD"] },
     { id: "CON-12584", client: "CON", title: "ADEXERNS - Modélisation Supports", period: "2013", role: "Stagiaire Support d'Ingénierie", tools: "PDMS, AutoCAD", details: "Modélisation de supports pour lignes fines et équipements. Maquettage d'isométriques et documentation générale.", skills: ["Supports", "Detailing"] },
     { id: "BSK-09274", client: "VAL-UO1-PD", title: "Fontes GM - Support Tuyauterie", period: "2013", role: "Stagiaire Support d'Ingénierie", tools: "PDMS, Isométriques", details: "Traitement et adéquation d'isométriques pour les lignes de production.", skills: ["Tuyauterie", "Isométriques"] },
     { id: "BSF-13157", client: "BSF", title: "F265 J200 - Locação Equipamentos", period: "2014", role: "Stagiaire Support d'Ingénierie", tools: "PDMS, AutoCAD", details: "Modélisation et positionnement d'équipements industriels conformément aux plans d'implantation.", skills: ["3D Modeling", "Plant Layout"] },
-    { id: "CSN-13139", client: "CSN", title: "Expansion Phase 2 - Sidérurgie", period: "2014 - 2015", role: "Stagiaire Support d'Ingénierie", tools: "AutoCAD (DWG), MS Office", details: "Arrangements mécaniques, moyens de passage et repositionnement d'équipements lourds. Élaboration de listes de matériels (BOM). Projets de base et détaillé.", skills: ["Mécanique", "BOM", "Layout Design"] },
+    { id: "CSN-13139", client: "CSN", title: "Expansion Phase 2 - Sidérurgie", period: "2014", role: "Stagiaire Support d'Ingénierie", tools: "AutoCAD (DWG), MS Office", details: "Arrangements mécaniques, moyens de passage et repositionnement d'équipements lourds. Élaboration de listes de matériels (BOM). Projets de base et détaillé.", skills: ["Mécanique", "BOM", "Layout Design"] },
     { id: "VAL-13546", client: "VALE", title: "Système de Pompage Booster CMC", period: "2014", role: "Stagiaire Support d'Ingénierie", tools: "PDMS, MS Office", details: "Adéquation de routes de tuyauterie, élaboration de supports spéciaux et positionnement de vannes. Levée de prix et contact fournisseurs.", skills: ["Piping", "Supports Design", "Procurement"] },
     { id: "VAL-13490", client: "VALE", title: "Dépoussiérage MAPU 230", period: "2014", role: "Stagiaire Support d'Ingénierie", tools: "AutoCAD (DWG)", details: "Mise en œuvre de dessins DWG. Élaboration de coupes pour arrangements mécaniques et de tuyauterie. Projet de base.", skills: ["Mécanique", "Tuyauterie", "Dessin Technique"] },
     { id: "LXS-11424", client: "LXS", title: "Dessins Mécaniques & Isométriques", period: "2014", role: "Stagiaire Support d'Ingénierie", tools: "AutoCAD, Isométriques", details: "Élaboration et adéquation de dessins mécaniques et d'isométriques. Projets conceptuel et de base.", skills: ["Mécanique", "Isométriques", "Conception"] }
@@ -151,12 +151,12 @@ const DashboardVulcain = () => {
                 </div>
                 <div>
                   <h3 className="text-xl md:text-2xl font-black text-[#003366] uppercase italic leading-tight">
-                    Chemtech (Siemens Group)
+                    Chemtech (A Siemens Company)
                   </h3>
                   <p className="text-[9px] md:text-sm font-bold tracking-widest uppercase text-gray-400 mt-1">
                     <span className="text-[#10B981] italic underline decoration-2 underline-offset-4">Engineering Support / Piping</span> 
                     <span className="mx-2">•</span>
-                    2012 — 2015 <span className="mx-1">•</span> Brésil
+                    2012 — 2014 <span className="mx-1">•</span> Brésil
                   </p>
                 </div>
               </div>
