@@ -63,15 +63,15 @@ const DashboardVulcain = () => {
   const nextProject = () => setSelectedProjectIdx((prev) => (prev + 1) % chemtechProjects.length);
   const prevProject = () => setSelectedProjectIdx((prev) => (prev - 1 + chemtechProjects.length) % chemtechProjects.length);
 
-  return (
+  {/*   return (
     <div className="bg-slate-50 min-h-screen font-sans text-slate-900 pb-12 md:pb-20">
       
-      {/* Barre de progression sticky */}
+       //Barre de progression sticky //
       <div className="fixed top-0 left-0 w-full h-1 bg-gray-200 z-50">
         <div className="h-full bg-gradient-to-r from-blue-600 to-green-500 transition-all duration-300" style={{ width: `${scrollProgress}%` }}></div>
       </div>
 
-      {/* HEADER RESPONSIVE AMÉLIORÉ */}
+     HEADER RESPONSIVE AMÉLIORÉ 
       <nav className="bg-[#003366] text-white p-4 md:p-8 shadow-xl sticky top-0 z-40 border-b-4 border-blue-500">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-3">
           <div className="text-center md:text-left">
@@ -80,6 +80,37 @@ const DashboardVulcain = () => {
           </div>
           <div className="bg-gradient-to-r from-blue-600 to-green-600 px-3 md:px-6 py-1 md:py-2 rounded-full font-black italic text-xs md:text-base flex items-center gap-1 md:gap-2 animate-pulse">
             <Zap size={12} className="md:w-4 md:h-4"/> DISPONIBLE
+          </div>
+        </div>
+      </nav>  */}
+
+      return (
+    <div className="bg-slate-50 min-h-screen font-sans text-slate-900 pb-20">
+
+      {/* Barre de progression sticky */}
+      <div className="fixed top-0 left-0 w-full h-1 bg-gray-200 z-50">
+        <div className="h-full bg-gradient-to-r from-blue-600 to-green-500 transition-all duration-300" style={{ width: `${scrollProgress}%` }}></div>
+      </div>
+
+      
+      {/* Header - Design Inspiré Vulcain */}
+      <nav className="bg-[#002B49] text-white p-8 shadow-2xl sticky top-0 z-40 border-b-4 border-blue-500">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+          <div>
+            <h1 className="text-3xl font-black tracking-tighter uppercase italic">Eliandro Teles</h1>
+            <p className="text-blue-300 font-bold text-lg flex items-center gap-2">
+              <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+              Ingénieur Support Technique | Candidat Vulcain Engineering
+            </p>
+          </div>
+          <div className="flex gap-4">
+            <div className="bg-white/10 px-4 py-2 rounded-lg border border-white/20 text-center">
+              <p className="text-[10px] font-bold uppercase text-blue-200">Localisation</p>
+              <p className="text-sm font-bold">France</p>
+            </div>
+            <div className="bg-blue-600 px-6 py-2 rounded-full shadow-lg flex items-center gap-2 font-black italic">
+              DISPONIBLE
+            </div>
           </div>
         </div>
       </nav>
