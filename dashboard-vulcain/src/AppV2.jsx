@@ -262,9 +262,15 @@ const DashboardVulcain = () => {
         {/* Sticky CTA flottant (optimisé mobile) */}
         <div className="fixed bottom-3 md:bottom-8 right-3 md:right-8 z-40">
           <a href="/Dossier Technique - Eliandro Teles.pdf" download >
-          <button className="bg-gradient-to-r from-[#002B49] to-blue-800 text-white px-3 py-1.5 md:px-6 md:py-3 rounded-full font-black text-[10px] md:text-base shadow-2xl flex items-center gap-1 md:gap-2 hover:scale-105 transition-all active:scale-95">
+            
+          {/* <button className="bg-gradient-to-r from-[#002B49] to-blue-800 text-white px-3 py-1.5 md:px-6 md:py-3 rounded-full font-black text-[10px] md:text-base shadow-2xl flex items-center gap-1 md:gap-2 hover:scale-105 transition-all active:scale-95">
              📄 Dossier <span className="hidden sm:inline">Technique</span> <ChevronRight size={12} className="md:w-5 md:h-5" />
-          </button> 
+          </button> */}
+
+             <button className="bg-gradient-to-r from-blue-600 to-green-600 px-3 md:px-6 py-1 md:py-2 rounded-full font-black italic text-xs md:text-base flex items-center gap-1 md:gap-2 animate-pulse">
+            <Zap size={14} className="md:w-4 md:h-4"/> 📄 Dossier <span className="hidden sm:inline">Technique</span> <ChevronRight size={14} className="md:w-5 md:h-5" />
+          </button>
+            
              </a>
         </div>
 
