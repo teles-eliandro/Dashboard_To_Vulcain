@@ -76,7 +76,7 @@ const DashboardVulcain = () => {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-3">
           <div className="text-center md:text-left">
             <h1 className="text-xl md:text-3xl font-black tracking-tighter uppercase italic">Eliandro Teles</h1>
-            <p className="text-blue-200 font-bold text-xs md:text-lg italic">Ingénieur Support Technique | Candidature Vulcain</p>
+            <p className="text-blue-200 font-bold text-xs md:text-lg italic">Ingénieur Support Technique | Candidature Vulcain Engineering Group</p>
           </div>
           <div className="bg-gradient-to-r from-blue-600 to-green-600 px-3 md:px-6 py-1 md:py-2 rounded-full font-black italic text-xs md:text-base flex items-center gap-1 md:gap-2 animate-pulse">
             <Zap size={12} className="md:w-4 md:h-4"/> DISPONIBLE
@@ -277,7 +277,7 @@ const DashboardVulcain = () => {
         {/* FOOTER RESPONSIVE */}
         <footer className="bg-gradient-to-r from-[#002B49] to-blue-800 p-5 md:p-8 rounded-2xl md:rounded-3xl text-white flex flex-col md:flex-row justify-between items-center gap-4 md:gap-6 shadow-2xl">
           <div className="text-center md:text-left">
-            <h4 className="text-base md:text-2xl font-bold">Prêt à relever les défis de Vulcain</h4>
+            <h4 className="text-base md:text-2xl font-bold">Prêt à relever les défis de Vulcain Engineering Group</h4>
             <p className="text-blue-200 opacity-80 mt-0.5 md:mt-1 uppercase tracking-tighter font-medium text-[10px] md:text-base">Ingénierie • Support • Excellence</p>
           </div>
           <div className="flex gap-2 md:gap-3">
