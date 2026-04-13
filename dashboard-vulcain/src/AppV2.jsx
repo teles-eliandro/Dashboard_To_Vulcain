@@ -267,8 +267,8 @@ const DashboardVulcain = () => {
              📄 Dossier <span className="hidden sm:inline">Technique</span> <ChevronRight size={12} className="md:w-5 md:h-5" />
           </button> */}
 
-             <button className="bg-gradient-to-r from-blue-600 to-green-600 px-3 md:px-6 py-1 md:py-2 rounded-full font-black italic text-xs md:text-base flex items-center gap-1 md:gap-2 animate-pulse">
-            <Zap size={14} className="md:w-4 md:h-4"/> 📄 Dossier <span className="hidden sm:inline">Technique</span> <ChevronRight size={14} className="md:w-5 md:h-5" />
+             <button className="bg-gradient-to-r from-blue-600 to-green-600 px-3 md:px-6 py-1 md:py-2 rounded-full font-black bold text-[15px] md:text-base flex items-center gap-1 md:gap-2 animate-pulse">
+            <Zap size={12} className="md:w-4 md:h-4"/> 📄 Dossier <span className="hidden sm:inline">Technique</span> <ChevronRight size={12} className="md:w-5 md:h-5" />
           </button>
             
              </a>
