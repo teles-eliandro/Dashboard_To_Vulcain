@@ -82,7 +82,7 @@ const DashboardVulcain = () => {
             <Zap size={12} className="md:w-4 md:h-4"/> DISPONIBLE
           </div>
         </div>
-      </nav>  */}
+      </nav>  
 
      {/*
  return (
