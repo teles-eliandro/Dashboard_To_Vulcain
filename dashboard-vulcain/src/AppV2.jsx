@@ -276,7 +276,7 @@ const DashboardVulcain = () => {
             <button className="bg-white text-[#002B49] hover:bg-blue-50 px-3 py-1.5 md:px-6 md:py-3 rounded-full font-black text-[10px] md:text-base shadow-lg flex items-center gap-1 md:gap-2 transition-all active:scale-95">
               CV Complet <ChevronRight size={12} className="md:w-5 md:h-5" />
             </button>
-            <button className="border-2 border-white px-3 py-1.5 md:px-6 md:py-3 rounded-full font-black text-[10px] md:text-base hover:bg-white/10 transition-all active:scale-95">
+            <button className="border-2 border-white px-3 py-1.5 md:px-6 md:py-3 rounded-full font-black text-[10px] md:text-base hover:bg-white/10 transition-all active:scale-95" href="https://www.linkedin.com/in/eliandro-teles/" taget="blank">
               LinkedIn
             </button>
           </div>
