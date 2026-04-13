@@ -261,9 +261,11 @@ const DashboardVulcain = () => {
 
         {/* Sticky CTA flottant (optimisé mobile) */}
         <div className="fixed bottom-3 md:bottom-8 right-3 md:right-8 z-40">
+          <a href="/Dossier Technique - Eliandro Teles.pdf" download >
           <button className="bg-gradient-to-r from-[#002B49] to-blue-800 text-white px-3 py-1.5 md:px-6 md:py-3 rounded-full font-black text-[10px] md:text-base shadow-2xl flex items-center gap-1 md:gap-2 hover:scale-105 transition-all active:scale-95">
-            📄 Dossier <span className="hidden sm:inline">Complet</span> <ChevronRight size={12} className="md:w-5 md:h-5" />
-          </button>
+             📄 Dossier <span className="hidden sm:inline">Technique</span> <ChevronRight size={12} className="md:w-5 md:h-5" />
+          </button> 
+             </a>
         </div>
 
         {/* FOOTER RESPONSIVE */}
@@ -273,11 +275,11 @@ const DashboardVulcain = () => {
             <p className="text-blue-200 opacity-80 mt-0.5 md:mt-1 uppercase tracking-tighter font-medium text-[10px] md:text-base">Ingénierie • Support • Excellence</p>
           </div>
           <div className="flex gap-2 md:gap-3">
+            <a href="https://site-eliandro.vercel.app/" target="_blank" rel="noopener noreferrer">
             <button className="bg-white text-[#002B49] hover:bg-blue-50 px-3 py-1.5 md:px-6 md:py-3 rounded-full font-black text-[10px] md:text-base shadow-lg flex items-center gap-1 md:gap-2 transition-all active:scale-95">
-               <a href="https://site-eliandro.vercel.app/" target="_blank" rel="noopener noreferrer">
-              Portfolio Complet <ChevronRight size={12} className="md:w-5 md:h-5" />
-              </a>
+              Site/Portfolio <ChevronRight size={10} className="md:w-5 md:h-5" />
             </button>
+               </a>
             <button className="border-2 border-white px-3 py-1.5 md:px-6 md:py-3 rounded-full font-black text-[10px] md:text-base hover:bg-white/10 transition-all active:scale-95">
               <a href="https://www.linkedin.com/in/eliandro-teles/" target="_blank" rel="noopener noreferrer">
               LinkedIn
