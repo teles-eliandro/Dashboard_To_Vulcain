@@ -108,13 +108,21 @@ const DashboardVulcain = () => {
               <div className="p-2 md:p-3 bg-gradient-to-r from-green-600 to-blue-600 rounded-xl md:rounded-2xl text-white shadow-lg">
                 <Briefcase size={18} className="md:w-6 md:h-6"/>
               </div>
-                <h3 className="text-lg md:text-2xl font-black text-[#003366] uppercase italic">MD Concept | Chargé d'affaires (2022-2024)</h3>
+              
+               <div>
+                  <h3 className="text-xl md:text-2xl font-black text-[#003366] uppercase italic leading-tight">
+                    MD CONCEPT (BTP)
+                  </h3>
                   <p className="text-[9px] md:text-sm font-bold tracking-widest uppercase text-gray-400 mt-1">
-                    <span className="text-[#10B981] italic underline decoration-2 underline-offset-4">Engineering Support / Piping</span> 
+                    <span className="text-[#10B981] italic underline decoration-2 underline-offset-4">Chargé d'affaires</span> 
                     <span className="mx-2">•</span>
-                    2012 — 2014 <span className="mx-1">•</span> Brésil
-                   </p>
-            
+                    2022 — 2024 <span className="mx-1">•</span> France
+                  </p>
+                </div>
+              
+              {/*
+                  <h3 className="text-lg md:text-2xl font-black text-[#003366] uppercase italic">MD Concept | Chargé d'affaires (2022-2024)</h3>
+               */}
             
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 md:gap-8 items-center">
