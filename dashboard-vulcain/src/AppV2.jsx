@@ -75,7 +75,7 @@ const DashboardVulcain = () => {
       <nav className="bg-[#003366] text-white p-4 md:p-8 shadow-xl sticky top-0 z-40 border-b-4 border-blue-500">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-3">
           <div className="text-center md:text-left">
-            <h1 className="text-xl md:text-3xl font-black tracking-tighter uppercase italic">Eliandro Pereira Teles</h1>
+            <h1 className="text-xl md:text-3xl font-black tracking-tighter uppercase italic">Eliandro Teles</h1>
             <p className="text-blue-200 font-bold text-xs md:text-lg italic">Ingénieur Support Technique | Candidature Vulcain</p>
           </div>
           <div className="bg-gradient-to-r from-blue-600 to-green-600 px-3 md:px-6 py-1 md:py-2 rounded-full font-black italic text-xs md:text-base flex items-center gap-1 md:gap-2 animate-pulse">
