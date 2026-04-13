@@ -66,7 +66,7 @@ const DashboardVulcain = () => {
     return (
     <div className="bg-slate-50 min-h-screen font-sans text-slate-900 pb-12 md:pb-20">
       
-       {*/ Barre de progression sticky */}
+       {/* Barre de progression sticky */}
       <div className="fixed top-0 left-0 w-full h-1 bg-gray-200 z-50">
         <div className="h-full bg-gradient-to-r from-blue-600 to-green-500 transition-all duration-300" style={{ width: `${scrollProgress}%` }}></div>
       </div>
