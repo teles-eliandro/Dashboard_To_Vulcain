@@ -123,7 +123,7 @@ const DashboardVulcain = () => {
               </div>
               <h2 className="text-3xl md:text-5xl font-black text-[#003366] leading-none mb-4 italic uppercase">Chemtech <span className="text-[#10B981]">Siemens</span></h2>
               <p className="text-slate-600 text-sm md:text-base font-medium italic leading-relaxed mb-6">
-                "Deux ans d'immersion totale au sein d'une filiale Siemens, assurant le support technique sur des projets Oil & Gas complexes."
+                "Deux ans d'immersion au sein d'une filiale Siemens, assurant le support technique sur des projets Oil & Gas complexes."
               </p>
               <div className="space-y-3">
                 <div className="flex items-center justify-between p-3 bg-white rounded-xl shadow-sm border border-slate-200">
