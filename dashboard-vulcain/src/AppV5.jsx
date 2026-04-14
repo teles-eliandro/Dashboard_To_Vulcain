@@ -54,7 +54,7 @@ const DashboardVulcain = () => {
     { id: "LXS-11424", client: "LXS", title: "Dessins Mécaniques & Isométriques", period: "2014", role: "Support d'Ingénierie", tools: "AutoCAD", details: "Conception conceptuelle et de base pour dessins mécaniques complexes.", skills: ["Mécanique"] },
     { id: "MJR-13169", client: "MJR", title: "MTOURE COMPERJ", period: "2013", role: "Stagiaire Support", tools: "Excel, PDMS", details: "Gestion des listes de matériels et extraction de données 3D.", skills: ["MTO"] },
     { id: "PBR-12045", client: "PETROBRAS", title: "Unité de Traitement Gaz Naturel", period: "2014", role: "Stagiaire Support", tools: "PDMS, AutoCAD", details: "Support à l'ingénierie de détail pour tuyauterie auxiliaire.", skills: ["Gaz Naturel"] },
-    { id: "VAL-14002", client: "VALE", title: "Audit Infrastructures São Luis", period: "2014", role: "Stagiaire Support", tools: "Normes NR", details: "Vérification sur site de la conformité maquette vs réel.", skills: ["Audit Site"] }
+    { id: "VAL-14002", client: "VALE", title: "Audit Infrastructures São Luis", period: "2014", role: "Stagiaire Support", tools: "Normes NR, COMOS, NavisWork", details: "Vérification sur site de la conformité maquette vs réel.", skills: ["Audit Site"] }
   ];
 
   const filteredProjects = useMemo(() => {
