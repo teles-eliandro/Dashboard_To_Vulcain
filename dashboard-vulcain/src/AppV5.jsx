@@ -1,20 +1,8 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import * as Lucide from 'lucide-react';
-import { 
-  Globe, 
+import {  
   Linkedin, 
   Github, 
-  Zap, 
-  Search, 
-  Star, 
-  Activity, 
-  Database, 
-  ShieldCheck, 
-  PenTool, 
-  X, 
-  ChevronLeft, 
-  ChevronRight,
-  HelpCircle 
 } from 'lucide-react';
 
 const DashboardVulcain = () => {
