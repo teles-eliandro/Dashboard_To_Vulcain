@@ -189,7 +189,7 @@ const DashboardVulcain = () => {
               </p>
             </div>
             <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 gap-4 w-full">
-              {["PDMS", "AutoCAD", "COMOS", "Naviswork", "Excel", "MS Project"].map(tool => (
+              {["PDMS", "AutoCAD", "COMOS", "Navisworks", "Excel", "MS Project"].map(tool => (
                 <div key={tool} className="bg-white/10 backdrop-blur-md border border-white/10 p-4 rounded-2xl flex flex-col items-center justify-center hover:bg-white/20 transition-all group">
                   <Icon name="PenTool" size={20} className="mb-2 text-[#10B981] group-hover:scale-110 transition-transform"/>
                   <span className="font-black text-xs uppercase tracking-widest">{tool}</span>
