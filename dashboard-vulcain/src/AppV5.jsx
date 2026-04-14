@@ -1,5 +1,21 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import * as Lucide from 'lucide-react';
+import { 
+  Globe, 
+  Linkedin, 
+  Github, 
+  Zap, 
+  Search, 
+  Star, 
+  Activity, 
+  Database, 
+  ShieldCheck, 
+  PenTool, 
+  X, 
+  ChevronLeft, 
+  ChevronRight,
+  HelpCircle 
+} from 'lucide-react';
 
 const DashboardVulcain = () => {
   const [selectedProjectIdx, setSelectedProjectIdx] = useState(null);
@@ -89,10 +105,10 @@ const DashboardVulcain = () => {
                <Icon name="Globe" size={18} />
              </a>
              <a href="https://www.linkedin.com/in/eliandro-teles" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/10 rounded-lg hover:bg-blue-600 transition-all">
-               <Icon name="LinkedIn" size={18} />
+               <Icon name="Linkedin" size={18} />
              </a>
              <a href="https://github.com/teles-eliandro/" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/10 rounded-lg hover:bg-slate-800 transition-all">
-               <Icon name="GitHub" size={18} />
+               <Icon name="Github" size={18} />
              </a>
              <div className="bg-[#10B981] text-white px-4 py-2 rounded-full font-black italic text-xs flex items-center gap-2">
                 <Icon name="Zap" size={14} /> DISPONIBLE
@@ -230,7 +246,7 @@ const DashboardVulcain = () => {
                     <p className="font-bold text-[#003366] text-xs uppercase">{chemtechProjects[selectedProjectIdx].tools}</p>
                   </div>
                   <div className="bg-green-50/50 p-4 rounded-xl">
-                    <p className="text-[9px] font-black text-green-600 uppercase mb-1">Secteur</p>
+                    <p className="text-[9px] font-black text-green-600 uppercase mb-1">Client</p>
                     <p className="font-bold text-[#003366] text-xs uppercase">{chemtechProjects[selectedProjectIdx].client}</p>
                   </div>
                 </div>
