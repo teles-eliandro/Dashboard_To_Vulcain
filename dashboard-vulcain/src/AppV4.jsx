@@ -2,7 +2,8 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { 
   Settings, ShieldCheck, PenTool, Globe, ChevronRight, ChevronLeft, 
   Briefcase, X, Calendar, CheckCircle, TrendingUp, Target, Database,
-  Search, Clock, Award, Zap, Star, BarChart3, Activity, Github, Linkedin, ExternalLink
+  Search, Clock, Award, Zap, Star, BarChart3, Activity, 
+  Github as GithubIcon, Linkedin as LinkedinIcon, ExternalLink 
 } from 'lucide-react';
 
 // Fonction de génération de contexte (restaurée)
@@ -87,11 +88,13 @@ const DashboardVulcain = () => {
               <ExternalLink size={20} />
             </a>
             <a href="https://linkedin.com/in/eliandro-teles/" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/10 hover:bg-blue-600 rounded-xl transition-all border border-white/10" title="LinkedIn">
-              <Linkedin size={20} />
+               <LinkedinIcon size={20} />
             </a>
             <a href="https://github.com/votre-compte" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/10 hover:bg-slate-800 rounded-xl transition-all border border-white/10" title="GitHub">
-              <Github size={20} />
+             <GithubIcon size={20}
             </a>
+
+            
             <div className="bg-[#10B981] text-white px-5 py-2 rounded-xl font-black italic shadow-lg flex items-center gap-2 text-sm">
               <Zap size={16} /> DISPONIBLE
             </div>
