@@ -17,7 +17,7 @@ const DashboardVulcain = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Fonction pour l'affichage dynamique des icônes (sécurité build)
+  // Fonction pour l'affichage dynamique des icônes
   const Icon = ({ name, ...props }) => {
     const LucideIcon = Lucide[name] || Lucide.HelpCircle;
     return <LucideIcon {...props} />;
@@ -35,7 +35,6 @@ const DashboardVulcain = () => {
   };
 
   const chemtechProjects = [
-
     { id: "PBR-09410", client: "PETROBRAS", title: "Centrale Thermique UTE SEPE TIARAJU", period: "2012 - 2014", role: "Support d'Ingénierie", tools: "PDMS, AutoCAD", details: "Modélisation complète multidisciplinaire (Civil, Équipements, Tuyauterie). Extraction et révision d'isométriques.", skills: ["Modélisation 3D", "Piping"] },
     { id: "FWR-10397", client: "FEED PREMIUM ONSITE", title: "Support Technique Ingénierie", period: "2012", role: "Support", tools: "PDMS, Isométriques", details: "Adéquation, extraction, révision et exécution d'isométriques.", skills: ["Piping"] },
     { id: "PBR-10330", client: "PETROBRAS", title: "Logistique EBDMOTOB", period: "2012 - 2013", role: "Support d'Ingénierie", tools: "AutoCAD, PDMS", details: "Adéquation technique et révision d'isométriques pour les flux logistiques.", skills: ["Logistique", "Isométriques"] },
@@ -56,18 +55,8 @@ const DashboardVulcain = () => {
     { id: "MJR-13169", client: "MJR", title: "MTOURE COMPERJ", period: "2013", role: "Stagiaire Support", tools: "Excel, PDMS", details: "Gestion des listes de matériels et extraction de données 3D.", skills: ["MTO"] },
     { id: "PBR-12045", client: "PETROBRAS", title: "Unité de Traitement Gaz Naturel", period: "2014", role: "Stagiaire Support", tools: "PDMS, AutoCAD", details: "Support à l'ingénierie de détail pour tuyauterie auxiliaire.", skills: ["Gaz Naturel"] },
     { id: "VAL-14002", client: "VALE", title: "Audit Infrastructures São Luis", period: "2014", role: "Stagiaire Support", tools: "Normes NR", details: "Vérification sur site de la conformité maquette vs réel.", skills: ["Audit Site"] }
-
   ];
 
-// Statistiques calculées pour le Dashboard
-  const stats = [
-    { label: "Missions Petrobras", value: "8", icon: <Activity className="text-blue-600" />, color: "bg-blue-50" },
-    { label: "Projets Vale/Mining", value: "6", icon: <Database className="text-green-600" />, color: "bg-green-50" },
-    { label: "Modélisation 3D", value: "100%", icon: <Zap className="text-yellow-600" />, color: "bg-yellow-50" },
-    { label: "Non-conformités HSE", value: "0", icon: <ShieldCheck className="text-emerald-600" />, color: "bg-emerald-50" }
-  ];
-
-  
   const filteredProjects = useMemo(() => {
     return chemtechProjects.filter(p => 
       p.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
@@ -75,6 +64,7 @@ const DashboardVulcain = () => {
     );
   }, [searchTerm]);
 
+  // STATISTIQUES (Correction : Déclaration unique)
   const stats = [
     { label: "Missions Petrobras", value: "8", icon: "Activity", color: "bg-blue-50", text: "text-blue-600" },
     { label: "Projets Vale/Mining", value: "6", icon: "Database", color: "bg-green-50", text: "text-green-600" },
@@ -95,9 +85,9 @@ const DashboardVulcain = () => {
             <p className="text-blue-200 font-bold text-[10px] md:text-sm uppercase tracking-widest">Expert Support Ingénierie • Chemtech / Siemens</p>
           </div>
           <div className="flex items-center gap-3">
-             <a href="https://votre-portfolio.com" target="_blank" className="p-2 bg-white/10 rounded-lg hover:bg-[#10B981] transition-all"><Icon name="Globe" size={18} /></a>
-             <a href="https://linkedin.com/in/votre-profil" target="_blank" className="p-2 bg-white/10 rounded-lg hover:bg-blue-600 transition-all"><Icon name="Linkedin" size={18} /></a>
-             <a href="https://github.com/votre-profil" target="_blank" className="p-2 bg-white/10 rounded-lg hover:bg-slate-800 transition-all"><Icon name="Github" size={18} /></a>
+             <a href="https://votre-portfolio.com" target="_blank" rel="noreferrer" className="p-2 bg-white/10 rounded-lg hover:bg-[#10B981] transition-all"><Icon name="Globe" size={18} /></a>
+             <a href="https://linkedin.com/in/votre-profil" target="_blank" rel="noreferrer" className="p-2 bg-white/10 rounded-lg hover:bg-blue-600 transition-all"><Icon name="Linkedin" size={18} /></a>
+             <a href="https://github.com/votre-profil" target="_blank" rel="noreferrer" className="p-2 bg-white/10 rounded-lg hover:bg-slate-800 transition-all"><Icon name="Github" size={18} /></a>
              <div className="bg-[#10B981] text-white px-4 py-2 rounded-full font-black italic text-xs flex items-center gap-2">
                 <Icon name="Zap" size={14} /> DISPONIBLE
              </div>
@@ -160,7 +150,7 @@ const DashboardVulcain = () => {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 h-[400px] overflow-y-auto pr-2 custom-scrollbar">
-                {filteredProjects.map((project, idx) => (
+                {filteredProjects.map((project) => (
                   <div key={project.id} onClick={() => setSelectedProjectIdx(chemtechProjects.findIndex(p => p.id === project.id))} className="group bg-slate-50 hover:bg-[#003366] p-4 rounded-2xl border border-slate-200 transition-all cursor-pointer relative">
                     <div className="relative z-10">
                       <div className="flex justify-between mb-2">
@@ -180,10 +170,9 @@ const DashboardVulcain = () => {
           </div>
         </section>
 
-        {/* SECTION 3: TECH STACK (Optimisée en Cockpit) */}
         <section className="bg-[#003366] p-8 md:p-12 rounded-[2.5rem] text-white shadow-2xl relative overflow-hidden">
           <div className="absolute bottom-0 right-0 p-12 opacity-5">
-            <Database size={200} />
+            <Icon name="Database" size={200} />
           </div>
           <div className="relative z-10 flex flex-col lg:flex-row gap-12 items-start">
             <div className="lg:w-1/3">
@@ -195,7 +184,7 @@ const DashboardVulcain = () => {
             <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 gap-4 w-full">
               {["PDMS", "AutoCAD", "SolidWorks", "NX", "VESTA", "MS Project"].map(tool => (
                 <div key={tool} className="bg-white/10 backdrop-blur-md border border-white/10 p-4 rounded-2xl flex flex-col items-center justify-center hover:bg-white/20 transition-all group">
-                  <PenTool size={20} className="mb-2 text-[#10B981] group-hover:scale-110 transition-transform"/>
+                  <Icon name="PenTool" size={20} className="mb-2 text-[#10B981] group-hover:scale-110 transition-transform"/>
                   <span className="font-black text-xs uppercase tracking-widest">{tool}</span>
                 </div>
               ))}
@@ -203,15 +192,13 @@ const DashboardVulcain = () => {
           </div>
         </section>
 
-        {/* CTA Flottant & Footer identiques au précédent pour la consistance */}
         <div className="fixed bottom-6 right-6 z-40">
            <a href="/Dossier Technique - Eliandro Teles.pdf" download className="block">
             <button className="bg-gradient-to-r from-[#10B981] to-blue-600 text-white px-6 py-4 rounded-full font-black text-sm md:text-base shadow-2xl flex items-center gap-3 hover:scale-105 transition-all animate-bounce">
-              <Zap size={20}/> 📄 DOSSIER TECHNIQUE
+              <Icon name="Zap" size={20}/> 📄 DOSSIER TECHNIQUE
             </button>
           </a>
         </div>
-      
       </main>
 
       {selectedProjectIdx !== null && (
