@@ -59,6 +59,15 @@ const DashboardVulcain = () => {
 
   ];
 
+// Statistiques calculées pour le Dashboard
+  const stats = [
+    { label: "Missions Petrobras", value: "8", icon: <Activity className="text-blue-600" />, color: "bg-blue-50" },
+    { label: "Projets Vale/Mining", value: "6", icon: <Database className="text-green-600" />, color: "bg-green-50" },
+    { label: "Modélisation 3D", value: "100%", icon: <Zap className="text-yellow-600" />, color: "bg-yellow-50" },
+    { label: "Non-conformités HSE", value: "0", icon: <ShieldCheck className="text-emerald-600" />, color: "bg-emerald-50" }
+  ];
+
+  
   const filteredProjects = useMemo(() => {
     return chemtechProjects.filter(p => 
       p.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
