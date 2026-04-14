@@ -1,9 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import * as Lucide from 'lucide-react';
-import {  
-  Linkedin, 
-  Github, 
-} from 'lucide-react';
 
 const DashboardVulcain = () => {
   const [selectedProjectIdx, setSelectedProjectIdx] = useState(null);
