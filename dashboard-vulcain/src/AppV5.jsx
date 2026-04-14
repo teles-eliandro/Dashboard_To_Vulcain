@@ -82,7 +82,7 @@ const DashboardVulcain = () => {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-center md:text-left">
             <h1 className="text-xl md:text-3xl font-black uppercase italic tracking-tighter">Eliandro Teles</h1>
-            <p className="text-blue-200 font-bold text-[10px] md:text-sm uppercase tracking-widest">Expert Support Ingénierie • Chemtech / Siemens</p>
+            <p className="text-blue-200 font-bold text-[10px] md:text-sm uppercase tracking-widest">Support Ingénierie • Chemtech / Siemens</p>
           </div>
           <div className="flex items-center gap-3">
              <a href="https://votre-portfolio.com" target="_blank" rel="noreferrer" className="p-2 bg-white/10 rounded-lg hover:bg-[#10B981] transition-all"><Icon name="Globe" size={18} /></a>
@@ -182,7 +182,7 @@ const DashboardVulcain = () => {
               </p>
             </div>
             <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 gap-4 w-full">
-              {["PDMS", "AutoCAD", "SolidWorks", "NX", "VESTA", "MS Project"].map(tool => (
+              {["PDMS", "AutoCAD", "COMOS", "Naviswork", "Excel", "MS Project"].map(tool => (
                 <div key={tool} className="bg-white/10 backdrop-blur-md border border-white/10 p-4 rounded-2xl flex flex-col items-center justify-center hover:bg-white/20 transition-all group">
                   <Icon name="PenTool" size={20} className="mb-2 text-[#10B981] group-hover:scale-110 transition-transform"/>
                   <span className="font-black text-xs uppercase tracking-widest">{tool}</span>
