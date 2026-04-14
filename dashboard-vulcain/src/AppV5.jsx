@@ -23,6 +23,34 @@ const DashboardVulcain = () => {
     return <LucideIcon {...props} />;
   };
 
+
+  // ... (reste du code identique au-dessus)
+
+      <nav className="bg-[#003366] text-white p-4 md:p-8 shadow-2xl sticky top-0 z-40 border-b-4 border-[#10B981]">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="text-center md:text-left">
+            <h1 className="text-xl md:text-3xl font-black uppercase italic tracking-tighter">Eliandro Teles</h1>
+            <p className="text-blue-200 font-bold text-[10px] md:text-sm uppercase tracking-widest">Expert Support Ingénierie • Chemtech / Siemens</p>
+          </div>
+          <div className="flex items-center gap-3">
+             <a href="https://site-eliandro.vercel.app/" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/10 rounded-lg hover:bg-[#10B981] transition-all">
+               <Icon name="Globe" size={18} />
+             </a>
+             <a href="https://www.linkedin.com/in/eliandro-teles" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/10 rounded-lg hover:bg-blue-600 transition-all">
+               <Icon name="Linkedin" size={18} />
+             </a>
+             <a href="https://github.com/teles-eliandro/" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/10 rounded-lg hover:bg-slate-800 transition-all">
+               <Icon name="Github" size={18} />
+             </a>
+             <div className="bg-[#10B981] text-white px-4 py-2 rounded-full font-black italic text-xs flex items-center gap-2">
+                <Icon name="Zap" size={14} /> DISPONIBLE
+             </div>
+          </div>
+        </div>
+      </nav>
+
+// ... (reste du code identique en dessous)
+
   // Logique du "Contexte Opérationnel"
   const getOperationalContext = (client) => {
     const contexts = {
