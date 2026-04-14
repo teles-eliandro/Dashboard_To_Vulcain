@@ -180,11 +180,38 @@ const DashboardVulcain = () => {
           </div>
         </section>
 
+        {/* SECTION 3: TECH STACK (Optimisée en Cockpit) */}
+        <section className="bg-[#003366] p-8 md:p-12 rounded-[2.5rem] text-white shadow-2xl relative overflow-hidden">
+          <div className="absolute bottom-0 right-0 p-12 opacity-5">
+            <Database size={200} />
+          </div>
+          <div className="relative z-10 flex flex-col lg:flex-row gap-12 items-start">
+            <div className="lg:w-1/3">
+              <h3 className="text-2xl font-black uppercase italic tracking-tighter mb-4">Technical Stack</h3>
+              <p className="text-blue-200 font-medium italic">
+                L'ensemble des outils maîtrisés et déployés sur les infrastructures critiques Petrobras et Vale.
+              </p>
+            </div>
+            <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 gap-4 w-full">
+              {["PDMS", "AutoCAD", "SolidWorks", "NX", "VESTA", "MS Project"].map(tool => (
+                <div key={tool} className="bg-white/10 backdrop-blur-md border border-white/10 p-4 rounded-2xl flex flex-col items-center justify-center hover:bg-white/20 transition-all group">
+                  <PenTool size={20} className="mb-2 text-[#10B981] group-hover:scale-110 transition-transform"/>
+                  <span className="font-black text-xs uppercase tracking-widest">{tool}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Flottant & Footer identiques au précédent pour la consistance */}
         <div className="fixed bottom-6 right-6 z-40">
-           <button className="bg-gradient-to-r from-[#10B981] to-blue-600 text-white px-5 py-3 rounded-full font-black text-xs shadow-2xl flex items-center gap-2 hover:scale-105 transition-all">
-             <Icon name="FileText" size={16}/> DOSSIER TECHNIQUE
-           </button>
+           <a href="/Dossier Technique - Eliandro Teles.pdf" download className="block">
+            <button className="bg-gradient-to-r from-[#10B981] to-blue-600 text-white px-6 py-4 rounded-full font-black text-sm md:text-base shadow-2xl flex items-center gap-3 hover:scale-105 transition-all animate-bounce">
+              <Zap size={20}/> 📄 DOSSIER TECHNIQUE
+            </button>
+          </a>
         </div>
+      
       </main>
 
       {selectedProjectIdx !== null && (
