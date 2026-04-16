@@ -49,12 +49,12 @@ const DashboardVulcain = () => {
     { id: "BSK-09274", client: "VAL-UO1-PD", title: "Fontes GM - Support Tuyauterie", period: "2013", role: "Stagiaire Support", tools: "PDMS, Isométriques", details: "Traitement et adéquation d'isométriques.", skills: ["Tuyauterie"] },
     { id: "BSF-13157", client: "BSF", title: "F265 J200 - Locação Equipamentos", period: "2014", role: "Stagiaire Support", tools: "PDMS, AutoCAD", details: "Modélisation et positionnement d'équipements industriels.", skills: ["3D Modeling"] },
     { id: "CSN-13139", client: "CSN", title: "Expansion Phase 2 - Sidérurgie", period: "2014", role: "Support d'Ingénierie", tools: "AutoCAD, BOM", details: "Arrangements mécaniques et repositionnement d'équipements lourds.", skills: ["Mécanique", "BOM"] },
-    { id: "VAL-13546", client: "VALE", title: "Système de Pompage Booster CMC", period: "2014", role: "Support d'Ingénierie", tools: "PDMS, Procurement", details: "Adéquation de routes de tuyauterie et supports spéciaux.", skills: ["Piping", "Supports"] },
+    { id: "VAL-13546", client: "VALE", title: "Système de Pompage Booster CMC", period: "2014", role: "Support d'Ingénierie", tools: "PDMS, AutoCAD, Excel", details: "Adéquation de routes de tuyauterie et supports spéciaux.", skills: ["Piping", "Supports"] },
     { id: "VAL-13490", client: "VALE", title: "Dépoussiérage MAPU 230", period: "2014", role: "Stagiaire Support", tools: "AutoCAD (DWG)", details: "Mise en œuvre de dessins DWG et arrangements mécaniques.", skills: ["Mécanique"] },
     { id: "LXS-11424", client: "LXS", title: "Dessins Mécaniques & Isométriques", period: "2014", role: "Support d'Ingénierie", tools: "AutoCAD", details: "Conception conceptuelle et de base pour dessins mécaniques complexes.", skills: ["Mécanique"] },
     { id: "MJR-13169", client: "MJR", title: "MTOURE COMPERJ", period: "2013", role: "Stagiaire Support", tools: "Excel, PDMS", details: "Gestion des listes de matériels et extraction de données 3D.", skills: ["MTO"] },
     { id: "PBR-12045", client: "PETROBRAS", title: "Unité de Traitement Gaz Naturel", period: "2014", role: "Stagiaire Support", tools: "PDMS, AutoCAD", details: "Support à l'ingénierie de détail pour tuyauterie auxiliaire.", skills: ["Gaz Naturel"] },
-    { id: "VAL-14002", client: "VALE", title: "Audit Infrastructures São Luis", period: "2014", role: "Stagiaire Support", tools: "Normes NR, COMOS, NavisWork", details: "Vérification sur site de la conformité maquette vs réel.", skills: ["Audit Site"] }
+    { id: "VAL-14002", client: "VALE", title: "Audit Infrastructures São Luis", period: "2014", role: "Stagiaire Support", tools: "Normes NR, COMOS, NavisWorks", details: "Vérification sur site de la conformité maquette vs réel.", skills: ["Audit Site"] }
   ];
 
   const filteredProjects = useMemo(() => {
